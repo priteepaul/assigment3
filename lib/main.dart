@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project_name/login_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,9 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.dark(),
-      home: Scaffold(body: Text("hello 63B")),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage());
   }
 }
